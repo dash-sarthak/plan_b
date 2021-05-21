@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan B | Home</title>
+
+    <link rel="stylesheet" href="{% static 'blog/css/styles.css' %}">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="{% static 'blog/images/logo_small.svg' %}" alt="logo">
+            <h2>PLAN b</h2>
+        </div>
+
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+
+        <div class="end">
+            <a class="contact_lnk" href="#">Contact</a>
+            <a class="sign_in" href="#"><button>Sign In</button></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="left_pane">
+            <h3>Welcome Earthiling</h3>
+            <h1>The Beginings Of A Better World</h1>
+            <p>Let's make our planet awesome again</p>
+            <a class="sign_up" href="{% url 'blog-register' %}"><button>Let's Go!</button></a>
+        </div>
+        <div class="right_pane">
+            <img src=" {% static 'blog/images/image.svg' %} " alt="">
+        </div>
+    </main>
+
+
+</body>
+
+</html>

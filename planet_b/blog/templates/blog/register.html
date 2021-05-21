@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan B | Register</title>
+
+    <link rel="stylesheet" href="{% static 'blog/css/styles.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left_half">
+            <div class="nav">
+                <a href="#">Home</a>
+                <a href="#">Sign In</a>
+            </div>
+            <div class="content">
+                <div class="texts">
+                    <h1>Fill the details to be a part of the team</h1>
+                </div>
+                <form id='user-input-form'>
+                    <div class='form-input'>
+                        <input type='text' id='email' placeholder='Email or Phone' class='form-input-size' required />
+                    </div>
+                    <div class='form-input'>
+                        <input type='password' id='password' placeholder='Password' class='form-input-size' required />
+                        <img src="{% static 'blog/images/lock.svg' %}" alt="">
+                    </div>
+                    <div class='form-input'>
+                        <input type='password' id='c_password' placeholder='Confirm Password' class='form-input-size' required />
+                        <img src="{% static 'blog/images/lock.svg' %}" alt="">
+                    </div>
+                    <div class="chkbox">
+                        <label class="checkbox">
+                            <input type="checkbox" />
+                            <span>I agree to the terms and conditions</span>
+                        </label>
+                    </div>
+                    <a class="reg_btn" href="#"><button>Register</button></a>
+                </form>
+            </div>
+        </div>
+        <div class="right_half">
+            <img src="{% static 'blog/images/image_register.svg' %}" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
